@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Акции</title><!--[if IE]>
+    <title>Личный кабинет | История транзакций</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
@@ -130,33 +130,70 @@
         </div>
       </header>
       <div class="content">
-        <div class="head-with-image">
+        <div class="head-with-color">
           <div class="container">
-            <h2>Про компанию FlashCash</h2>
+            <h2>История транзакций</h2>
           </div>
         </div>
-        <div class="pt-5em pt-2em-xs pb-5em pb-2em-xs">
+        <div class="main-personal-page">
           <div class="container">
-            <p class="f-medium mb-2em">Фінансова компанія, експерт у сфері споживчого кредитування фізичних осіб. Офіси FlashCash розташовані в більшості міст України, наші співробітники професіонали своєї справи і завжди знайдуть для Вас краще рішення. Якщо Ви починаєте ремонт, хочете оновити побутову техніку, плануєте навчання дітей, зібралися у відпустку і Вам потрібна фінансова допомога - це до нас! До зустрічі!</p>
-            <p class="f-medium text-center">FlashCash - ВАШ НАДежный финансовый партнер</p>
-            <p class="f-medium text-center">ЖИВИ, ПЛАНИРУЙ ДЕЙСТВУЙ!</p>
-          </div>
-        </div>
-        <div class="bg-blue pb-5em pb-2em-xs about">
-          <div class="container">
-            <h2 class="semibold pt-3em pb-2em pt-2em-xs pb-1em-xs size-1_5em text-center dark-blue">Почему выбирают нас</h2>
-            <ul class="custom-ul">
-              <li><span>Кредити до 30 000 грн</span></li>
-              <li><span>Тільки паспорт і ІПН</span></li>
-              <li><span>Рішення за 20 хвилин</span></li>
-              <li><span>Немає прихованих відсотків, комісій, штрафів</span></li>
-              <li><span>Гроші на картку будь-якого Банку</span></li>
-              <li><span>Оформлення заявки, де зручно Вам: офіс компанії, робота, дім</span></li>
-              <li><span>Знижки пенсіонерам та постійним клієнтам</span></li>
-              <li><span>Ми експерти в сфері споживчого кредитування фізичних осіб</span></li>
-            </ul>
-            <p class="text-center f-medium size-0_9em mb-1em">Вопросы задавайте по телефону 0 (800)70-70-70 (звонки  бесплатные по Украине) или в нашем чате.</p>
-            <p class="text-center f-medium size-0_9em c-orange">Юридическая информация ТОВ ФЛЭШ КЭШ</p>
+            <div class="flex-2em">
+              <div class="col-xs-12 col-sm-12 col-md-3 text-center-sm text-center-xs text-left-md mb-2em-sm mb-2em-xs">
+                <div class="user-photo"><img src="./static/images/png/photo-personal.png" alt=""></div>
+                <ul class="personal-menu">
+                  <li><a href="/personal-datas.html">Личные данные</a></li>
+                  <li><a href="/income.html">Доходы и платежи</a></li>
+                  <li><a href="/addresses.html">Адреса</a></li>
+                  <li><a href="/cards.html">Карточки</a></li>
+                  <li><a href="/social.html">Я в социальных сетях</a></li>
+                  <li class="active">История транзакций</li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-9">
+                <div class="user-name">Имя Фамилия Отчество<i class="icon-fc-pencil" id="edit-data" aria-hidden="true"></i></div>
+                <div class="user-id">ID 106908</div>
+                <div class="table-container mt-2em">
+                  <table>
+                    <thead>
+                      <tr>
+                        <td>Карта</td>
+                        <td>Номер</td>
+                        <td>Сумма</td>
+                        <td>Дата</td>
+                        <td>Тип</td>
+                        <td>Статус</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="card-icon"><i class="icon-fc-transaction" aria-hidden="true"></i></div>53 **** 6780
+                        </td>
+                        <td>13589066</td>
+                        <td>5 000 грн</td>
+                        <td>05.06.2019</td>
+                        <td>Выдача кредита</td>
+                        <td>
+                          <div class="active">Успешно</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="card-icon"><i class="icon-fc-cross" aria-hidden="true"></i></div>53 **** 6780
+                        </td>
+                        <td>13589066</td>
+                        <td>5 000 грн</td>
+                        <td>05.06.2019</td>
+                        <td>Выдача кредита</td>
+                        <td>
+                          <div class="inactive">Отказано</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
