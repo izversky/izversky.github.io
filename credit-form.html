@@ -205,49 +205,102 @@
                   </div>
                   <div class="column">
                     <h2>Паспортные данные</h2>
-                    <div class="passport-data mb-10"><span class="mr-10">Паспортные данные</span>
-                      <div class="form-group inline-input input-effect mr-10">
+                    <div class="mb-2_3em pt-0_5em">
+                      <label class="control control--radio">Паспорт
+                        <input type="radio" name="document-type" checked="checked" value="pas">
+                        <div class="control__indicator"></div>
+                      </label>
+                      <label class="control control--radio">ID карта
+                        <input type="radio" name="document-type" value="id">
+                        <div class="control__indicator"></div>
+                      </label>
+                    </div>
+                    <div class="pass-container" data-type="pas">
+                      <div class="passport-data mb-10"><span class="mr-10">Паспортные данные</span>
+                        <div class="form-group inline-input input-effect mr-10">
+                          <input type="text" placeholder="">
+                          <label>Серия</label><span class="focus-border"></span>
+                        </div>
+                        <div class="form-group inline-input input-effect">
+                          <input type="text" placeholder="">
+                          <label>Номер</label><span class="focus-border"></span>
+                        </div>
+                      </div>
+                      <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Серия</label><span class="focus-border"></span>
+                        <label>Кем выдан</label><span class="focus-border"></span>
                       </div>
-                      <div class="form-group inline-input input-effect">
+                      <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Номер</label><span class="focus-border"></span>
+                        <label>ИНН</label><span class="focus-border"></span>
+                      </div>
+                      <div class="mb-10">Дата выдачи паспорта</div>
+                      <div class="form-group">
+                        <div class="select">
+                          <select>
+                            <option disabled selected value>Дата</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                        <div class="select">
+                          <select>
+                            <option disabled selected value>Месяц</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                        <div class="select">
+                          <select>
+                            <option disabled selected value>Год</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
                       </div>
                     </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Кем выдан</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>ИНН</label><span class="focus-border"></span>
-                    </div>
-                    <div class="mb-10">Дата выдачи паспорта</div>
-                    <div class="form-group">
-                      <div class="select">
-                        <select>
-                          <option disabled selected value>Дата</option>
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                    <div class="id-container display-none" data-type="id">
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Номер записи ID</label><span class="focus-border"></span>
                       </div>
-                      <div class="select">
-                        <select>
-                          <option disabled selected value>Месяц</option>
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Номер ID</label><span class="focus-border"></span>
                       </div>
-                      <div class="select">
-                        <select>
-                          <option disabled selected value>Год</option>
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Кем выдан ID</label><span class="focus-border"></span>
+                      </div>
+                      <div class="mb-10">ID действителен до</div>
+                      <div class="form-group">
+                        <div class="select">
+                          <select>
+                            <option disabled selected value>Дата</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                        <div class="select">
+                          <select>
+                            <option disabled selected value>Месяц</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                        <div class="select">
+                          <select>
+                            <option disabled selected value>Год</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
                       </div>
                     </div>
                   </div>
