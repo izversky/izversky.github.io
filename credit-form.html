@@ -146,95 +146,23 @@
                     </div>
                   </div>
                 </div>
-                <div class="two-columns">
-                  <div class="column">
-                    <h2>Личные данные</h2>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Имя</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Фамилия</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Отчество</label><span class="focus-border"></span>
-                    </div>
-                    <div class="mb-10">День вашего рождения</div>
-                    <div class="form-group">
-                      <div class="select">
-                        <select>
-                          <option disabled selected value>Дата</option>
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                      <div class="select">
-                        <select>
-                          <option disabled selected value>Месяц</option>
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                      <div class="select">
-                        <select>
-                          <option disabled selected value>Год</option>
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group"><span style="margin-right: 15px">Ваш пол:</span>
-                      <label class="control control--radio">мужчина
-                        <input type="radio" name="radio" checked="checked">
-                        <div class="control__indicator"></div>
-                      </label>
-                      <label class="control control--radio">женщина
-                        <input type="radio" name="radio">
-                        <div class="control__indicator"></div>
-                      </label>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Телефон</label><span class="focus-border"></span>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <h2>Паспортные данные</h2>
-                    <div class="mb-2_3em pt-0_5em">
-                      <label class="control control--radio">Паспорт
-                        <input type="radio" name="document-type" checked="checked" value="pas">
-                        <div class="control__indicator"></div>
-                      </label>
-                      <label class="control control--radio">ID карта
-                        <input type="radio" name="document-type" value="id">
-                        <div class="control__indicator"></div>
-                      </label>
-                    </div>
-                    <div class="pass-container" data-type="pas">
-                      <div class="passport-data mb-10"><span class="mr-10">Паспортные данные</span>
-                        <div class="form-group inline-input input-effect mr-10">
-                          <input type="text" placeholder="">
-                          <label>Серия</label><span class="focus-border"></span>
-                        </div>
-                        <div class="form-group inline-input input-effect">
-                          <input type="text" placeholder="">
-                          <label>Номер</label><span class="focus-border"></span>
-                        </div>
+                <form action="/credit-form.html">
+                  <div class="two-columns">
+                    <div class="column">
+                      <h2>Личные данные</h2>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Имя</label><span class="focus-border"></span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Кем выдан</label><span class="focus-border"></span>
+                        <label>Фамилия</label><span class="focus-border"></span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>ИНН</label><span class="focus-border"></span>
+                        <label>Отчество</label><span class="focus-border"></span>
                       </div>
-                      <div class="mb-10">Дата выдачи паспорта</div>
+                      <div class="mb-10">День вашего рождения</div>
                       <div class="form-group">
                         <div class="select">
                           <select>
@@ -261,68 +189,142 @@
                           <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
                         </div>
                       </div>
+                      <div class="form-group"><span style="margin-right: 15px">Ваш пол:</span>
+                        <label class="control control--radio">мужчина
+                          <input type="radio" name="radio" checked="checked">
+                          <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--radio">женщина
+                          <input type="radio" name="radio">
+                          <div class="control__indicator"></div>
+                        </label>
+                      </div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Телефон</label><span class="focus-border"></span>
+                      </div>
                     </div>
-                    <div class="id-container display-none" data-type="id">
-                      <div class="form-group input-effect">
-                        <input type="text" placeholder="">
-                        <label>Номер записи ID</label><span class="focus-border"></span>
+                    <div class="column">
+                      <h2>Паспортные данные</h2>
+                      <div class="mb-2_3em pt-0_5em">
+                        <label class="control control--radio">Паспорт
+                          <input type="radio" name="document-type" checked="checked" value="pas">
+                          <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--radio">ID карта
+                          <input type="radio" name="document-type" value="id">
+                          <div class="control__indicator"></div>
+                        </label>
                       </div>
-                      <div class="form-group input-effect">
-                        <input type="text" placeholder="">
-                        <label>Номер ID</label><span class="focus-border"></span>
-                      </div>
-                      <div class="form-group input-effect">
-                        <input type="text" placeholder="">
-                        <label>Кем выдан ID</label><span class="focus-border"></span>
-                      </div>
-                      <div class="mb-10">ID действителен до</div>
-                      <div class="form-group">
-                        <div class="select">
-                          <select>
-                            <option disabled selected value>Дата</option>
-                            <option>1</option>
-                            <option>2</option>
-                          </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                      <div class="pass-container" data-type="pas">
+                        <div class="passport-data mb-10"><span class="mr-10">Паспортные данные</span>
+                          <div class="form-group inline-input input-effect mr-10">
+                            <input type="text" placeholder="">
+                            <label>Серия</label><span class="focus-border"></span>
+                          </div>
+                          <div class="form-group inline-input input-effect">
+                            <input type="text" placeholder="">
+                            <label>Номер</label><span class="focus-border"></span>
+                          </div>
                         </div>
-                        <div class="select">
-                          <select>
-                            <option disabled selected value>Месяц</option>
-                            <option>1</option>
-                            <option>2</option>
-                          </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Кем выдан</label><span class="focus-border"></span>
                         </div>
-                        <div class="select">
-                          <select>
-                            <option disabled selected value>Год</option>
-                            <option>1</option>
-                            <option>2</option>
-                          </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>ИНН</label><span class="focus-border"></span>
+                        </div>
+                        <div class="mb-10">Дата выдачи паспорта</div>
+                        <div class="form-group">
+                          <div class="select">
+                            <select>
+                              <option disabled selected value>Дата</option>
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                          <div class="select">
+                            <select>
+                              <option disabled selected value>Месяц</option>
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                          <div class="select">
+                            <select>
+                              <option disabled selected value>Год</option>
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="id-container display-none" data-type="id">
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Номер записи ID</label><span class="focus-border"></span>
+                        </div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Номер ID</label><span class="focus-border"></span>
+                        </div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Кем выдан ID</label><span class="focus-border"></span>
+                        </div>
+                        <div class="mb-10">ID действителен до</div>
+                        <div class="form-group">
+                          <div class="select">
+                            <select>
+                              <option disabled selected value>Дата</option>
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                          <div class="select">
+                            <select>
+                              <option disabled selected value>Месяц</option>
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                          <div class="select">
+                            <select>
+                              <option disabled selected value>Год</option>
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label class="control control--checkbox decoration-underline">Направляю сообщение Обществу о принятии условий договора на использование аналога собственноручной подписи
-                    <input type="checkbox">
-                    <div class="control__indicator"></div>
-                  </label>
-                  <label class="control control--checkbox decoration-underline">Предоставляю разрешение на проверку информации относительно Клиента в Бюро кредитных историй
-                    <input type="checkbox">
-                    <div class="control__indicator"></div>
-                  </label>
-                  <label class="control control--checkbox decoration-underline">Предоставляю разрешение на проверку, обработку и передачу персональных данных
-                    <input type="checkbox">
-                    <div class="control__indicator"></div>
-                  </label>
-                  <label class="control control--checkbox decoration-underline">Акцептую Публичный договор-оферту по добровольному страхованию ответственности заемщика за непогашение кредита
-                    <input type="checkbox">
-                    <div class="control__indicator"></div>
-                  </label>
-                </div>
+                  <div class="form-group">
+                    <label class="control control--checkbox decoration-underline">Направляю сообщение Обществу о принятии условий договора на использование аналога собственноручной подписи
+                      <input type="checkbox">
+                      <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox decoration-underline">Предоставляю разрешение на проверку информации относительно Клиента в Бюро кредитных историй
+                      <input type="checkbox">
+                      <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox decoration-underline">Предоставляю разрешение на проверку, обработку и передачу персональных данных
+                      <input type="checkbox">
+                      <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--checkbox decoration-underline">Акцептую Публичный договор-оферту по добровольному страхованию ответственности заемщика за непогашение кредита
+                      <input type="checkbox">
+                      <div class="control__indicator"></div>
+                    </label>
+                  </div>
+                </form>
               </section>
               <h3>2</h3>
               <section>
