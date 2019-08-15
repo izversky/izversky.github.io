@@ -122,34 +122,245 @@
         <div class="credit-registration-container">
           <div class="container">
             <h1 class="text-center pt-2em dark-blue">Для оформления кредита - заполните анкету</h1>
-            <div class="credit-steps-form">
-              <h3>1</h3>
-              <section>
-                <div class="more-chance">
-                  <p class="semibold size-1_1em text-center mb-1em">Чтобы получить больше шансов на одобрение кредита,<br>вы можете подключить ваши аккаунты:</p>
-                  <div class="flex-1em child-col-sm-6 child-col-md-3 child-col-xs-12">
-                    <div class="col text-center pb-1em">
-                      <div class="image mb-1em"><img src="./static/images/png/facebook.png" alt=""></div>
-                      <p class="size-0_7em">Социальная информация повышает вероятность одобрения заявки</p>
-                    </div>
-                    <div class="col text-center pb-1em">
-                      <div class="image mb-1em"><img src="./static/images/png/facebook.png" alt=""></div>
-                      <p class="size-0_7em">Социальная информация повышает вероятность одобрения заявки</p>
-                    </div>
-                    <div class="col text-center pb-1em">
-                      <div class="image mb-1em"><img src="./static/images/png/facebook.png" alt=""></div>
-                      <p class="size-0_7em">Социальная информация повышает вероятность одобрения заявки</p>
-                    </div>
-                    <div class="col text-center pb-1em">
-                      <div class="image mb-1em"><img src="./static/images/png/facebook.png" alt=""></div>
-                      <p class="size-0_7em">Социальная информация повышает вероятность одобрения заявки</p>
+            <form id="credit-steps-form">
+              <div class="credit-steps-form">
+                <h3>1</h3>
+                <section>
+                  <div class="more-chance">
+                    <p class="semibold size-1_1em text-center mb-1em">Чтобы получить больше шансов на одобрение кредита,<br>вы можете подключить ваши аккаунты:</p>
+                    <div class="flex-1em child-col-sm-6 child-col-md-3 child-col-xs-12">
+                      <div class="col text-center pb-1em">
+                        <div class="image mb-1em"><img src="./static/images/png/facebook.png" alt=""></div>
+                        <p class="size-0_7em">Социальная информация повышает вероятность одобрения заявки</p>
+                      </div>
+                      <div class="col text-center pb-1em">
+                        <div class="image mb-1em"><img src="./static/images/png/facebook.png" alt=""></div>
+                        <p class="size-0_7em">Социальная информация повышает вероятность одобрения заявки</p>
+                      </div>
+                      <div class="col text-center pb-1em">
+                        <div class="image mb-1em"><img src="./static/images/png/facebook.png" alt=""></div>
+                        <p class="size-0_7em">Социальная информация повышает вероятность одобрения заявки</p>
+                      </div>
+                      <div class="col text-center pb-1em">
+                        <div class="image mb-1em"><img src="./static/images/png/facebook.png" alt=""></div>
+                        <p class="size-0_7em">Социальная информация повышает вероятность одобрения заявки</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <form action="/credit-form.html">
+                  <form action="/credit-form.html">
+                    <div class="two-columns">
+                      <div class="column">
+                        <h2>Личные данные</h2>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Имя</label><span class="focus-border"></span>
+                        </div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Фамилия</label><span class="focus-border"></span>
+                        </div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Отчество</label><span class="focus-border"></span>
+                        </div>
+                        <div class="mb-10">День вашего рождения</div>
+                        <div class="form-group">
+                          <div class="select">
+                            <select>
+                              <option disabled selected value>Дата</option>
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                          <div class="select">
+                            <select>
+                              <option disabled selected value>Месяц</option>
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                          <div class="select">
+                            <select>
+                              <option disabled selected value>Год</option>
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                        </div>
+                        <div class="form-group"><span style="margin-right: 15px">Ваш пол:</span>
+                          <label class="control control--radio">мужчина
+                            <input type="radio" name="radio" checked="checked">
+                            <div class="control__indicator"></div>
+                          </label>
+                          <label class="control control--radio">женщина
+                            <input type="radio" name="radio">
+                            <div class="control__indicator"></div>
+                          </label>
+                        </div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Телефон</label><span class="focus-border"></span>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <h2>Паспортные данные</h2>
+                        <div class="mb-2_3em pt-0_5em">
+                          <label class="control control--radio">Паспорт
+                            <input type="radio" name="document-type" checked="checked" value="pas">
+                            <div class="control__indicator"></div>
+                          </label>
+                          <label class="control control--radio">ID карта
+                            <input type="radio" name="document-type" value="id">
+                            <div class="control__indicator"></div>
+                          </label>
+                        </div>
+                        <div class="pass-container" data-type="pas">
+                          <div class="passport-data mb-10"><span class="mr-10">Паспортные данные</span>
+                            <div class="form-group inline-input input-effect mr-10">
+                              <input type="text" placeholder="">
+                              <label>Серия</label><span class="focus-border"></span>
+                            </div>
+                            <div class="form-group inline-input input-effect">
+                              <input type="text" placeholder="">
+                              <label>Номер</label><span class="focus-border"></span>
+                            </div>
+                          </div>
+                          <div class="form-group input-effect">
+                            <input type="text" placeholder="">
+                            <label>Кем выдан</label><span class="focus-border"></span>
+                          </div>
+                          <div class="form-group input-effect">
+                            <input type="text" placeholder="">
+                            <label>ИНН</label><span class="focus-border"></span>
+                          </div>
+                          <div class="mb-10">Дата выдачи паспорта</div>
+                          <div class="form-group">
+                            <div class="select">
+                              <select>
+                                <option disabled selected value>Дата</option>
+                                <option>1</option>
+                                <option>2</option>
+                              </select>
+                              <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                            </div>
+                            <div class="select">
+                              <select>
+                                <option disabled selected value>Месяц</option>
+                                <option>1</option>
+                                <option>2</option>
+                              </select>
+                              <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                            </div>
+                            <div class="select">
+                              <select>
+                                <option disabled selected value>Год</option>
+                                <option>1</option>
+                                <option>2</option>
+                              </select>
+                              <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="id-container display-none" data-type="id">
+                          <div class="form-group input-effect">
+                            <input type="text" placeholder="">
+                            <label>Номер записи ID</label><span class="focus-border"></span>
+                          </div>
+                          <div class="form-group input-effect">
+                            <input type="text" placeholder="">
+                            <label>Номер ID</label><span class="focus-border"></span>
+                          </div>
+                          <div class="form-group input-effect">
+                            <input type="text" placeholder="">
+                            <label>Кем выдан ID</label><span class="focus-border"></span>
+                          </div>
+                          <div class="mb-10">ID действителен до</div>
+                          <div class="form-group">
+                            <div class="select">
+                              <select>
+                                <option disabled selected value>Дата</option>
+                                <option>1</option>
+                                <option>2</option>
+                              </select>
+                              <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                            </div>
+                            <div class="select">
+                              <select>
+                                <option disabled selected value>Месяц</option>
+                                <option>1</option>
+                                <option>2</option>
+                              </select>
+                              <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                            </div>
+                            <div class="select">
+                              <select>
+                                <option disabled selected value>Год</option>
+                                <option>1</option>
+                                <option>2</option>
+                              </select>
+                              <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control control--checkbox decoration-underline">Направляю сообщение Обществу о принятии условий договора на использование аналога собственноручной подписи
+                        <input type="checkbox">
+                        <div class="control__indicator"></div>
+                      </label>
+                      <label class="control control--checkbox decoration-underline">Предоставляю разрешение на проверку информации относительно Клиента в Бюро кредитных историй
+                        <input type="checkbox">
+                        <div class="control__indicator"></div>
+                      </label>
+                      <label class="control control--checkbox decoration-underline">Предоставляю разрешение на проверку, обработку и передачу персональных данных
+                        <input type="checkbox">
+                        <div class="control__indicator"></div>
+                      </label>
+                      <label class="control control--checkbox decoration-underline">Акцептую Публичный договор-оферту по добровольному страхованию ответственности заемщика за непогашение кредита
+                        <input type="checkbox">
+                        <div class="control__indicator"></div>
+                      </label>
+                    </div>
+                  </form>
+                </section>
+                <h3>2</h3>
+                <section>
                   <div class="two-columns">
                     <div class="column">
-                      <h2>Личные данные</h2>
+                      <h2>Персональные данные</h2>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Семейное положение</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Образование</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Количество детей</label><span class="focus-border"></span>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <h2>Данные другого контактного лица</h2>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
                         <label>Имя</label><span class="focus-border"></span>
@@ -162,334 +373,27 @@
                         <input type="text" placeholder="">
                         <label>Отчество</label><span class="focus-border"></span>
                       </div>
-                      <div class="mb-10">День вашего рождения</div>
-                      <div class="form-group">
-                        <div class="select">
-                          <select>
-                            <option disabled selected value>Дата</option>
-                            <option>1</option>
-                            <option>2</option>
-                          </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                        </div>
-                        <div class="select">
-                          <select>
-                            <option disabled selected value>Месяц</option>
-                            <option>1</option>
-                            <option>2</option>
-                          </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                        </div>
-                        <div class="select">
-                          <select>
-                            <option disabled selected value>Год</option>
-                            <option>1</option>
-                            <option>2</option>
-                          </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                        </div>
-                      </div>
-                      <div class="form-group"><span style="margin-right: 15px">Ваш пол:</span>
-                        <label class="control control--radio">мужчина
-                          <input type="radio" name="radio" checked="checked">
-                          <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--radio">женщина
-                          <input type="radio" name="radio">
-                          <div class="control__indicator"></div>
-                        </label>
-                      </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
                         <label>Телефон</label><span class="focus-border"></span>
                       </div>
-                    </div>
-                    <div class="column">
-                      <h2>Паспортные данные</h2>
-                      <div class="mb-2_3em pt-0_5em">
-                        <label class="control control--radio">Паспорт
-                          <input type="radio" name="document-type" checked="checked" value="pas">
-                          <div class="control__indicator"></div>
-                        </label>
-                        <label class="control control--radio">ID карта
-                          <input type="radio" name="document-type" value="id">
-                          <div class="control__indicator"></div>
-                        </label>
-                      </div>
-                      <div class="pass-container" data-type="pas">
-                        <div class="passport-data mb-10"><span class="mr-10">Паспортные данные</span>
-                          <div class="form-group inline-input input-effect mr-10">
-                            <input type="text" placeholder="">
-                            <label>Серия</label><span class="focus-border"></span>
-                          </div>
-                          <div class="form-group inline-input input-effect">
-                            <input type="text" placeholder="">
-                            <label>Номер</label><span class="focus-border"></span>
-                          </div>
-                        </div>
-                        <div class="form-group input-effect">
-                          <input type="text" placeholder="">
-                          <label>Кем выдан</label><span class="focus-border"></span>
-                        </div>
-                        <div class="form-group input-effect">
-                          <input type="text" placeholder="">
-                          <label>ИНН</label><span class="focus-border"></span>
-                        </div>
-                        <div class="mb-10">Дата выдачи паспорта</div>
-                        <div class="form-group">
-                          <div class="select">
-                            <select>
-                              <option disabled selected value>Дата</option>
-                              <option>1</option>
-                              <option>2</option>
-                            </select>
-                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                          </div>
-                          <div class="select">
-                            <select>
-                              <option disabled selected value>Месяц</option>
-                              <option>1</option>
-                              <option>2</option>
-                            </select>
-                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                          </div>
-                          <div class="select">
-                            <select>
-                              <option disabled selected value>Год</option>
-                              <option>1</option>
-                              <option>2</option>
-                            </select>
-                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="id-container display-none" data-type="id">
-                        <div class="form-group input-effect">
-                          <input type="text" placeholder="">
-                          <label>Номер записи ID</label><span class="focus-border"></span>
-                        </div>
-                        <div class="form-group input-effect">
-                          <input type="text" placeholder="">
-                          <label>Номер ID</label><span class="focus-border"></span>
-                        </div>
-                        <div class="form-group input-effect">
-                          <input type="text" placeholder="">
-                          <label>Кем выдан ID</label><span class="focus-border"></span>
-                        </div>
-                        <div class="mb-10">ID действителен до</div>
-                        <div class="form-group">
-                          <div class="select">
-                            <select>
-                              <option disabled selected value>Дата</option>
-                              <option>1</option>
-                              <option>2</option>
-                            </select>
-                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                          </div>
-                          <div class="select">
-                            <select>
-                              <option disabled selected value>Месяц</option>
-                              <option>1</option>
-                              <option>2</option>
-                            </select>
-                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                          </div>
-                          <div class="select">
-                            <select>
-                              <option disabled selected value>Год</option>
-                              <option>1</option>
-                              <option>2</option>
-                            </select>
-                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                          </div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Степень отношений с клиентом</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label class="control control--checkbox decoration-underline">Направляю сообщение Обществу о принятии условий договора на использование аналога собственноручной подписи
-                      <input type="checkbox">
-                      <div class="control__indicator"></div>
-                    </label>
-                    <label class="control control--checkbox decoration-underline">Предоставляю разрешение на проверку информации относительно Клиента в Бюро кредитных историй
-                      <input type="checkbox">
-                      <div class="control__indicator"></div>
-                    </label>
-                    <label class="control control--checkbox decoration-underline">Предоставляю разрешение на проверку, обработку и передачу персональных данных
-                      <input type="checkbox">
-                      <div class="control__indicator"></div>
-                    </label>
-                    <label class="control control--checkbox decoration-underline">Акцептую Публичный договор-оферту по добровольному страхованию ответственности заемщика за непогашение кредита
-                      <input type="checkbox">
-                      <div class="control__indicator"></div>
-                    </label>
-                  </div>
-                </form>
-              </section>
-              <h3>2</h3>
-              <section>
-                <div class="two-columns">
-                  <div class="column">
-                    <h2>Персональные данные</h2>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Семейное положение</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Образование</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Количество детей</label><span class="focus-border"></span>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <h2>Данные другого контактного лица</h2>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Имя</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Фамилия</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Отчество</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Телефон</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Степень отношений с клиентом</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <h3>3</h3>
-              <section>
-                <h2>Адрес проживания</h2>
-                <div class="two-columns">
-                  <div class="column">
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Страна</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Область</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Район</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Тип населенного пункта</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Название населенного пункта</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Индекс</label><span class="focus-border"></span>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Улица</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Дом</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Корпус</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Квартира</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Форма собственности</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Срок проживания</label><span class="focus-border"></span>
-                    </div>
-                  </div>
-                </div>
-                <h2 class="mt-20">Адрес регистрации</h2>
-                <div class="form-group text-center">
-                  <label class="control control--checkbox">Совпадает с адресом проживания
-                    <input type="checkbox" checked="checked" id="registration-address-checkbox">
-                    <div class="control__indicator"></div>
-                  </label>
-                </div>
-                <div id="registration-address">
+                </section>
+                <h3>3</h3>
+                <section>
+                  <h2>Адрес проживания</h2>
                   <div class="two-columns">
                     <div class="column">
                       <div class="form-group input-effect">
@@ -579,264 +483,448 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </section>
-              <h3>4</h3>
-              <section>
-                <h2>Данные о месте работы</h2>
-                <div class="two-columns">
-                  <div class="column">
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Название предприятия</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Организационная форма предприятия</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Отрасль</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Количество сотрудников</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Рабочий телефон</label><span class="focus-border"></span>
-                    </div>
+                  <h2 class="mt-20">Адрес регистрации</h2>
+                  <div class="form-group text-center">
+                    <label class="control control--checkbox">Совпадает с адресом проживания
+                      <input type="checkbox" checked="checked" id="registration-address-checkbox">
+                      <div class="control__indicator"></div>
+                    </label>
                   </div>
-                  <div class="column">
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Категория должности</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                  <div id="registration-address">
+                    <div class="two-columns">
+                      <div class="column">
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Страна</label><span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                          <div class="select full">
+                            <select name="date" required="required">
+                              <option disabled selected value>Область</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="select full">
+                            <select name="date" required="required">
+                              <option disabled selected value>Район</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="select full">
+                            <select name="date" required="required">
+                              <option disabled selected value>Тип населенного пункта</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="select full">
+                            <select name="date" required="required">
+                              <option disabled selected value>Название населенного пункта</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                        </div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Индекс</label><span class="focus-border"></span>
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Специальность (направление деятельности)</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Срок работы на данном предприятии</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Общий стаж работы</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Занятость</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                      <div class="column">
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Улица</label><span class="focus-border"></span>
+                        </div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Дом</label><span class="focus-border"></span>
+                        </div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Корпус</label><span class="focus-border"></span>
+                        </div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Квартира</label><span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                          <div class="select full">
+                            <select name="date" required="required">
+                              <option disabled selected value>Форма собственности</option>
+                              <option>13</option>
+                              <option>14</option>
+                              <option>15</option>
+                            </select>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          </div>
+                        </div>
+                        <div class="form-group input-effect">
+                          <input type="text" placeholder="">
+                          <label>Срок проживания</label><span class="focus-border"></span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <h2 class="mt-20">Адрес предприятия</h2>
-                <div class="two-columns">
-                  <div class="column">
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Область</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                </section>
+                <h3>4</h3>
+                <section>
+                  <h2>Данные о месте работы</h2>
+                  <div class="two-columns">
+                    <div class="column">
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Название предприятия</label><span class="focus-border"></span>
+                      </div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Организационная форма предприятия</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Отрасль</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Количество сотрудников</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Рабочий телефон</label><span class="focus-border"></span>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Район</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                    <div class="column">
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Категория должности</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Тип населенного пункта</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Специальность (направление деятельности)</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Название населенного пункта</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Срок работы на данном предприятии</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Индекс</label><span class="focus-border"></span>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Тип улицы</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Общий стаж работы</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Улица</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Дом</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Корпус</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Офис</label><span class="focus-border"></span>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <h3>5</h3>
-              <section>
-                <h2>Данные о доходах</h2>
-                <div class="two-columns">
-                  <div class="column">
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Получали кредит в течении последних пяти лет</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Ежемесячный платеж по поточным кредитам</label><span class="focus-border"></span>
-                    </div>
-                    <div class="form-group input-effect">
-                      <input type="text" placeholder="">
-                      <label>Сумма основного дохода</label><span class="focus-border"></span>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="form-group">
-                      <div class="select full">
-                        <select name="date" required="required">
-                          <option disabled selected value>Частота выплат дохода</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                    </div>
-                    <div class="mb-10">Дата следующей выплаты дохода</div>
-                    <div class="form-group">
-                      <div class="select">
-                        <select>
-                          <option disabled selected value>Дата</option>
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                      <div class="select">
-                        <select>
-                          <option disabled selected value>Месяц</option>
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                      </div>
-                      <div class="select">
-                        <select>
-                          <option disabled selected value>Год</option>
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                        <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Занятость</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </section>
-            </div>
+                  <h2 class="mt-20">Адрес предприятия</h2>
+                  <div class="two-columns">
+                    <div class="column">
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Область</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Район</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Тип населенного пункта</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Название населенного пункта</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Индекс</label><span class="focus-border"></span>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Тип улицы</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Улица</label><span class="focus-border"></span>
+                      </div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Дом</label><span class="focus-border"></span>
+                      </div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Корпус</label><span class="focus-border"></span>
+                      </div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Офис</label><span class="focus-border"></span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <h3>5</h3>
+                <section>
+                  <h2>Данные о доходах</h2>
+                  <div class="two-columns">
+                    <div class="column">
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Получали кредит в течении последних пяти лет</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Ежемесячный платеж по поточным кредитам</label><span class="focus-border"></span>
+                      </div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="">
+                        <label>Сумма основного дохода</label><span class="focus-border"></span>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <div class="form-group">
+                        <div class="select full">
+                          <select name="date" required="required">
+                            <option disabled selected value>Частота выплат дохода</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                      <div class="mb-10">Дата следующей выплаты дохода</div>
+                      <div class="form-group">
+                        <div class="select">
+                          <select>
+                            <option disabled selected value>Дата</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                        <div class="select">
+                          <select>
+                            <option disabled selected value>Месяц</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                        <div class="select">
+                          <select>
+                            <option disabled selected value>Год</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <h3>6</h3>
+                <section>
+                  <h2>Документы</h2>
+                  <div class="document-upload-step mb-2em">
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Фото клиента с паспортом в руке:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-1">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-1" type="file" name="">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото ИНН:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-2">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-2" type="file" name="">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото первой страницы паспорта:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-3">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-3" type="file" name="">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото 2 и 3 страницы паспорта:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-4">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-4" type="file" name="">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото страницы паспорта с актуальным фото:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-5">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-5" type="file" name="">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото страницы с пропиской:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-6">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-6" type="file" name="">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото другого документа:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-7">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-7" type="file" name="">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото дополнительно:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-8">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-8" type="file" name="">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </form>
           </div>
         </div>
       </div>

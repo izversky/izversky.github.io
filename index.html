@@ -126,7 +126,7 @@
             <div class="text"></div>
           </div>
         </div>
-        <div class="calculate-section" data-type="with-sliders">
+        <div class="calculate-section">
           <div class="owl-carousel" id="calculate-carousel">
             <div class="item" style="background-image: url('./static/images/png/1.png')">
               <div class="description">
@@ -167,54 +167,56 @@
           </div>
           <div class="credit-calculate-owl-container">
             <div class="container flex flex-end items-center">
-              <div class="credit-calculate">
-                <div class="credit-calculate__inner">
-                  <div class="summ-slider">
-                    <div class="value-block">Сумма кредита<span class="value">
-                        <div class="input-buffer"></div>
-                        <input type="text" value="5 000">грн</span></div>
-                    <input id="range-credit-summ" type="range" min="1000" max="10000" step="1000" value="5000">
-                    <div class="range-info">
-                      <div class="from"><span>1 000</span>грн</div>
-                      <div class="to"><span>10 000</span>грн</div>
+              <form action="/index.html">
+                <div class="credit-calculate">
+                  <div class="credit-calculate__inner">
+                    <div class="summ-slider">
+                      <div class="value-block">Сумма кредита<span class="value">
+                          <div class="input-buffer"></div>
+                          <input type="text" value="5 000">грн</span></div>
+                      <input id="range-credit-summ" type="range" min="1000" max="10000" step="1000" value="5000">
+                      <div class="range-info">
+                        <div class="from"><span>1 000</span>грн</div>
+                        <div class="to"><span>10 000</span>грн</div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="summ-slider day-slider">
-                    <div class="value-block">Срок займа<span class="value">
-                        <div class="input-buffer"></div>
-                        <input type="text" value="14">дней</span></div>
-                    <input id="range-credit-days" type="range" min="7" max="60" step="1" value="14">
-                    <div class="range-info">
-                      <div class="from"><span>7</span>дней</div>
-                      <div class="to"><span>60</span>дней</div>
+                    <div class="summ-slider day-slider">
+                      <div class="value-block">Срок займа<span class="value">
+                          <div class="input-buffer"></div>
+                          <input type="text" value="14">дней</span></div>
+                      <input id="range-credit-days" type="range" min="7" max="60" step="1" value="14">
+                      <div class="range-info">
+                        <div class="from"><span>7</span>дней</div>
+                        <div class="to"><span>60</span>дней</div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="calendar-container">
-                    <div class="calendar-checked-date">
-                      <div class="d-i-block up semibold">Заплатить до</div><span></span>
-                    </div>
-                    <div class="calendar-inner">
-                      <div class="calendar" id="calendar"></div>
-                      <div class="info-block">
-                        <div class="info-block__summ">
-                          <h5 class="up semibold">Сумма</h5>
-                          <div class="value"><span>5 000</span>грн</div>
+                    <div class="calendar-container">
+                      <div class="calendar-checked-date">
+                        <div class="d-i-block up semibold">Заплатить до</div><span></span>
+                      </div>
+                      <div class="calendar-inner">
+                        <div class="calendar" id="calendar"></div>
+                        <div class="info-block">
+                          <div class="info-block__summ">
+                            <h5 class="up semibold">Сумма</h5>
+                            <div class="value"><span>5 000</span>грн</div>
+                          </div>
+                          <div class="info-block__commission">
+                            <h5>Комиссия</h5>
+                            <div class="value"><span>100</span>грн</div>
+                            <div class="descr">кредитная ставка 1%</div>
+                          </div>
+                          <div class="info-block__payment">
+                            <h5 class="up semibold">Всего к оплате</h5>
+                            <div class="value"><span>5 100</span>грн</div>
+                          </div>
+                          <button class="btn-main btn-orange btn-medium" type="submit"><span class="desktop">Подтвердить</span><span class="mobile">подать заявку</span></button>
                         </div>
-                        <div class="info-block__commission">
-                          <h5>Комиссия</h5>
-                          <div class="value"><span>100</span>грн</div>
-                          <div class="descr">кредитная ставка 1%</div>
-                        </div>
-                        <div class="info-block__payment">
-                          <h5 class="up semibold">Всего к оплате</h5>
-                          <div class="value"><span>5 100</span>грн</div>
-                        </div>
-                        <button class="btn-main btn-orange btn-medium" type="button"><span class="desktop">Подтвердить</span><span class="mobile">подать заявку</span></button>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -525,6 +527,8 @@
             <div class="col">
               <div id="sw-error">Попап error</div>
             </div>
+            <div class="col"><a href="/select-card.html">Выбор карты</a></div>
+            <div class="col"><a href="/payment-message.html">Сообщение после платежа</a></div>
           </div>
         </div>
       </div>
