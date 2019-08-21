@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>FlashCash</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="horizontal-line"></div>
+          <div class="flex-1em items-center space-between">
+            <div class="col-sm-3 col-xs-4"><a class="logo" href="/" alt="FlashCash" title="Home"></a></div>
+            <div class="col-sm-8 main-menu-col">
+              <nav class="main-menu">
+                <ul>
+                  <li><a id="about-us" href="#"><span class="icon"><i class="icon-fc-burger" aria-hidden="true"></i></span><span class="text">О нас</span></a></li>
+                  <li><a href="#"><span class="icon"><i class="icon-fc-card" aria-hidden="true"></i></span><span class="text">Получить</span></a></li>
+                  <li><a href="#"><span class="icon"><i class="icon-fc-purse" aria-hidden="true"></i></span><span class="text">Погасить</span></a></li>
+                  <li><a class="login-desktop" href="#"><span class="icon"><i class="icon-fc-mini-logo" aria-hidden="true"></i></span><span class="text">Мой<br>кабинет</span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-1 text-right site-controls">
+              <div id="burger">
+                <div class="burger-ico"></div>
+              </div>
+              <div class="lang-switcher-container">
+                <ul>
+                  <li><a href="#">анг</a></li>
+                  <li><a href="#">рус</a></li>
+                </ul><a href="#">укр</a>
+              </div><a class="login-mobile" href="/registration-login.html"><i class="icon-fc-user" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="about-us-menu" id="about-us-menu">
+          <div class="about-close">&times;</div>
+          <div class="container">
+            <div class="about-us-menu__inner">
+              <div class="flex-2em space-between">
+                <div class="col">
+                  <ul class="menu">
+                    <li><a href="/about.html">О компании</a></li>
+                    <li><a href="/question-answer.html">Вопрос-ответ</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Новости</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <div class="about-us-menu__contacts">
+                    <div class="item">
+                      <div class="descr">связаться с нами</div>
+                      <div class="info">0 (800) 70-50-60</div>
+                    </div>
+                    <div class="item">
+                      <div class="descr">общие вопросы</div>
+                      <div class="info">flashcash@gmail.com</div>
+                    </div>
+                    <div class="item">
+                      <div class="descr">техническая поддержка</div>
+                      <div class="info">flashcash@gmail.com</div>
+                    </div>
+                    <div class="item">
+                      <div class="descr">график работы горячей линии</div>
+                      <div class="info">пн-пт: 9:00-18:00<br>сб-вс: 10:00-17:00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="header-contact-form">
+                    <h3>Написать в компанию</h3>
+                    <p>напишите нам, будем рады ответить на любые ваши вопросы</p>
+                    <form action="">
+                      <div class="form-container">
+                        <div class="form-group">
+                          <label>Вид обращения</label>
+                          <select required="required">
+                            <option value="">поддержка клиентов</option>
+                            <option value="">поддержка клиентов</option>
+                            <option value="">поддержка клиентов</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>Имя</label>
+                          <input type="text" required="required">
+                        </div>
+                      </div>
+                      <div class="form-container">
+                        <div class="form-group">
+                          <label>Телефон</label>
+                          <input type="text" required="required">
+                        </div>
+                        <div class="form-group">
+                          <label>Email</label>
+                          <input type="text" required="required">
+                        </div>
+                      </div>
+                      <div class="form-container w-100">
+                        <div class="form-group">
+                          <label>Сообщение</label>
+                          <textarea rows="3" required="required"></textarea>
+                        </div>
+                      </div>
+                      <div class="text-center mt-1em">
+                        <button class="btn-main btn-orange" type="submit">Отправить</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="approved-bubble" id="approved-bubble">
+          <div class="icon"><i class="icon-fc-mini-logo" aria-hidden="true"></i></div>
+          <div class="info">
+            <div class="name"></div>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="calculate-section">
+          <div class="owl-carousel" id="calculate-carousel">
+            <div class="item" style="background-image: url('./static/images/png/1.png')">
+              <div class="description">
+                <div class="container">
+                  <div class="flex-2em">
+                    <div class="col-sm-5">
+                      <h3>Оформляйте кредит у нас на сайте.</h3>
+                      <h4 class="mb-0_8em">FlashCash</h4><a class="btn-main btn-white" href="#">Подробности</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="background-image: url('./static/images/png/1.png')">
+              <div class="description">
+                <div class="container">
+                  <div class="flex-2em">
+                    <div class="col-sm-5">
+                      <h3>Оформляйте кредит у нас на сайте.</h3>
+                      <h4 class="mb-0_8em">FlashCash</h4><a class="btn-main btn-white" href="#">Подробности</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item" style="background-image: url('./static/images/png/1.png')">
+              <div class="description">
+                <div class="container">
+                  <div class="flex-2em">
+                    <div class="col-sm-5">
+                      <h3>Оформляйте кредит у нас на сайте.</h3>
+                      <h4 class="mb-0_8em">FlashCash</h4><a class="btn-main btn-white" href="#">Подробности</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="credit-calculate-owl-container">
+            <div class="container flex flex-end items-center">
+              <form action="/index.html">
+                <div class="credit-calculate">
+                  <div class="credit-calculate__inner">
+                    <div class="summ-slider">
+                      <div class="value-block">Сумма кредита<span class="value">
+                          <div class="input-buffer"></div>
+                          <input type="text" value="5 000">грн</span></div>
+                      <input id="range-credit-summ" type="range" min="1000" max="10000" step="1000" value="5000">
+                      <div class="range-info">
+                        <div class="from"><span>1 000</span>грн</div>
+                        <div class="to"><span>10 000</span>грн</div>
+                      </div>
+                    </div>
+                    <div class="summ-slider day-slider">
+                      <div class="value-block">Срок займа<span class="value">
+                          <div class="input-buffer"></div>
+                          <input type="text" value="14">дней</span></div>
+                      <input id="range-credit-days" type="range" min="7" max="60" step="1" value="14">
+                      <div class="range-info">
+                        <div class="from"><span>7</span>дней</div>
+                        <div class="to"><span>60</span>дней</div>
+                      </div>
+                    </div>
+                    <div class="calendar-container">
+                      <div class="calendar-checked-date">
+                        <div class="d-i-block up semibold">Заплатить до</div><span></span>
+                      </div>
+                      <div class="calendar-inner">
+                        <div class="calendar" id="calendar"></div>
+                        <div class="info-block">
+                          <div class="info-block__summ">
+                            <h5 class="up semibold">Сумма</h5>
+                            <div class="value"><span>5 000</span>грн</div>
+                          </div>
+                          <div class="info-block__commission">
+                            <h5>Комиссия</h5>
+                            <div class="value"><span>100</span>грн</div>
+                            <div class="descr">кредитная ставка 1%</div>
+                          </div>
+                          <div class="info-block__payment">
+                            <h5 class="up semibold">Всего к оплате</h5>
+                            <div class="value"><span>5 100</span>грн</div>
+                          </div>
+                          <button class="btn-main btn-orange btn-medium" type="submit"><span class="desktop">Подтвердить</span><span class="mobile">подать заявку</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="main-section">
+          <div class="container">
+            <h2>Легко и быстро оформить кредит за 15 минут</h2>
+            <div class="step-cards-container">
+              <div class="step-card">
+                <div class="step">
+                  <div class="number">1
+                    <div class="time"><span>30</span>секунд</div>
+                  </div>
+                  <div class="text">Выберите сумму и срок</div>
+                </div>
+              </div>
+              <div class="step-card">
+                <div class="step">
+                  <div class="number">2
+                    <div class="time"><span>7</span>минут</div>
+                  </div>
+                  <div class="text">Заполните заявку</div>
+                </div>
+              </div>
+              <div class="step-card">
+                <div class="step">
+                  <div class="number">3
+                    <div class="time"><span>2</span>минуты</div>
+                  </div>
+                  <div class="text">Привяжите карту</div>
+                </div>
+              </div>
+              <div class="step-card">
+                <div class="step">
+                  <div class="number">4
+                    <div class="time"><span>30</span>секунд</div>
+                  </div>
+                  <div class="text">Получите деньги на карту</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-tabs__container">
+          <div class="product-tabs__header">
+            <div class="container">
+              <div class="flex-center">
+                <div class="col-12">
+                  <ul class="tab-elems">
+                    <li><a class="active" href="#tab-product">О продукте</a><a href="#tab-tariffs">Тарифы</a><a href="#tab-conditions">Условия</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-tabs__content">
+            <div class="container">
+              <div class="tab-content" id="tab-product">
+                <h2>Наш новый продукт</h2>
+                <h3>Самое выгодное предложение от FlashCash.</h3>
+                <p>Компания FlashCash не прекращает радовать своих клиентов. Мы знаем, насколько полезной для многих оказалась наша социальная программа #flashcash, поэтому даем возможность новым клиентам также подключится к ней. Условия просты: займы без % на протяжении 3 месяцев. Берёте займ и возвращаете только то, что получили на карту. Никаких комиссий, переплат и процентов.</p>
+                <p>Наша компания – лидер в сфере микрокредитования. Нам важно становится лучше и предлагать своим клиентам самые удобные условия займа. Именно поэтому в рамках проекта #FlashCash мы запускаем акцию “Все займы – бесплатно”. Все новые клиенты FlashCash могут использовать займ 9 2 дня совершенно бесплатно.</p>
+                <p class="bold">Преимущества для клиента очевидны:</p>
+                <ul>
+                  <li>- никаких процентов;</li>
+                  <li>- возможность поднять свой кредитный рейтинг;</li>
+                  <li>- возможность улучшить свою кредитную историю.</li>
+                </ul>
+                <p>И на десерт – мы предлагаем не только 92 беспроцентных дня, а и безлимит на количество займов.</p>
+                <p class="bold">Условия акции:</p>
+                <ul>
+                  <li>- Быть новым клиентом компании.</li>
+                  <li>- Зарегистрироваться на оформление первого займа на нашем сайте.</li>
+                  <li>- Выбрать вариант использования займа: 3 раза (по 30 дней); 6 раз (по 14) и 12 раз (по 7).</li>
+                  <li>- Подать заявку на сумму, которая вам необходима.</li>
+                  <li>- Добор свободных средств также происходит под 0%.</li>
+                </ul>
+                <p class="bold">Успейте воспользоваться уникальным предложением!</p>
+              </div>
+              <div class="tab-content" id="tab-tariffs" style="display: none;">
+                <h2>Пример 2 Пример 2 Пример 2 Пример 2 Пример 2 Пример 2 Пример 2 Пример 2</h2>
+                <h3>Пример 2 Пример 2 Пример 2 Пример 2 Пример 2</h3>
+                <p>Компания FlashCash не прекращает радовать своих клиентов. Мы знаем, насколько полезной для многих оказалась наша социальная программа #flashcash, поэтому даем возможность новым клиентам также подключится к ней. Условия просты: займы без % на протяжении 3 месяцев. Берёте займ и возвращаете только то, что получили на карту. Никаких комиссий, переплат и процентов.</p>
+                <p>Наша компания – лидер в сфере микрокредитования. Нам важно становится лучше и предлагать своим клиентам самые удобные условия займа. Именно поэтому в рамках проекта #FlashCash мы запускаем акцию “Все займы – бесплатно”. Все новые клиенты FlashCash могут использовать займ 9 2 дня совершенно бесплатно.</p>
+                <p class="bold">Преимущества для клиента очевидны:</p>
+              </div>
+              <div class="tab-content" id="tab-conditions" style="display: none;">
+                <h2>Пример 3 Пример 3 Пример 3</h2>
+                <h3>Пример 3 Пример 3 Пример 3 Пример 3 Пример 3 Пример 3 Пример 3 Пример 3 Пример 3 Пример 3 Пример 3 Пример 3 Пример 3 Пример 3 Пример 3</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="flex-2em child-col-md-3 child-col-sm-6 child-col-xs-12 child-mb-2em-sm child-mb-2em-xs">
+            <div class="col">
+              <h6>Узнайте о нас больше</h6>
+              <ul class="footer-menu">
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Договор займа</a></li>
+                <li><a href="#">Финансовая отчетность</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h6>Узнайте о нас больше</h6>
+              <ul class="footer-menu">
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Договор займа</a></li>
+                <li><a href="#">Финансовая отчетность</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h6>Узнайте о нас больше</h6>
+              <ul class="footer-menu">
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Договор займа</a></li>
+                <li><a href="#">Финансовая отчетность</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h6>Узнайте о нас больше</h6>
+              <ul class="footer-menu">
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Договор займа</a></li>
+                <li><a href="#">Финансовая отчетность</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-form">
+            <h6>Вступайте в наш клуб  Flash Cash</h6>
+            <p>Только для друзей уникальные акции, скидки и советы по экономии</p>
+            <form action="">
+              <div class="form-group input-effect with-background">
+                <input type="text" name="name">
+                <label>Ваше имя</label>
+              </div>
+              <div class="form-group input-effect with-background">
+                <input type="email" name="email">
+                <label>Ваш email</label>
+              </div>
+              <button class="btn-main btn-orange" type="sumbit">Подписаться</button>
+            </form>
+          </div>
+          <div class="flex-2em items-end child-col-xs-12">
+            <div class="col-sm-3 col-lg-3"><a class="logo" href="/" alt="FlashCash" title="Home"></a></div>
+            <div class="col-sm-5 col-lg-6 text-center-xs mb-2em-xs">
+              <p class="fs-0_85rem">Первый в Украине сервис кредитования через интернет.<br>Мы предоставляем быстрые и удобные кредиты для всех<br>граждан Украины.<br><br>© 2019 MyCredit - Кредит онлайн на банковскую карту за 20 минут </p>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+              <div class="social-links">
+                <h5 class="fs-0_85rem">Cтать нашим другом:</h5>
+                <ul>
+                  <li><a href="#"><i class="icon-fc-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="icon-fc-telegram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="icon-fc-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="icon-fc-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./static/js/libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./static/js/main.min.js"></script>
+    <script src="./static/js/libs/owl.carousel/owl.carousel.min.js"></script>
+    <script src="./static/js/libs/materialize/materialize.min.js"></script>
+    <script src="./static/js/libs/rangeslider/rangeslider.min.js"></script>
+    <script src="./static/js/libs/jquery.steps/jquery.steps.min.js"></script>
+    <script src="./static/js/libs/sweetalert/sweetalert2.min.js"></script>
+  </body>
+</html>
