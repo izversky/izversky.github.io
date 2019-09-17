@@ -2,10 +2,11 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Личный кабинет | Кредиты</title><!--[if IE]>
+    <title>Оформление кредита</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
@@ -180,94 +181,108 @@
         </div>
       </header>
       <div class="content">
-        <div class="head-with-color">
+        <div class="credit-registration-container" data-type="with-last-step">
           <div class="container">
-            <h2>Кредиты</h2>
-          </div>
-        </div>
-        <div class="main-personal-page">
-          <div class="container">
-            <div class="flex-2em">
-              <div class="col-xs-12 col-sm-12 col-md-3 text-center-sm text-center-xs text-left-md mb-2em-sm mb-2em-xs">
-                <div>
-                  <div class="user-photo"><img src="./static/images/png/photo-personal.png" alt="">
-                    <div id="change-photo"><i class="icon-fc-camera" aria-hidden="true"></i></div>
-                    <input class="display-none" type="file">
-                  </div>
+            <h1 class="text-center pt-2em dark-blue">Для оформления кредита - заполните анкету</h1>
+            <div class="credit-steps-form">
+              <h3>1</h3>
+              <section></section>
+              <h3>2</h3>
+              <section></section>
+              <h3>3</h3>
+              <section></section>
+              <h3>4</h3>
+              <section></section>
+              <h3>5</h3>
+              <section></section>
+              <h3>6</h3>
+              <section>
+                <h2>Документы</h2>
+                <div class="document-upload-step mb-2em">
+                  <form action="" id="document-upload">
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Фото клиента с паспортом в руке:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-1">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-1" type="file" name="file1" required="required">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото ИНН:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-2">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-2" type="file" name="file2" required="required">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото первой страницы паспорта:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-3">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-3" type="file" name="file3" required="required">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото 2 и 3 страницы паспорта:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-4">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-4" type="file" name="file4" required="required">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото страницы паспорта с актуальным фото:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-5">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-5" type="file" name="file5" required="required">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото страницы с пропиской:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-6">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-6" type="file" name="file6" required="required">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото другого документа:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-7">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-7" type="file" name="file7" required="required">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                    <div class="document-upload-step__item">
+                      <div class="text f-medium">Скан/фото дополнительно:</div>
+                      <div class="input">
+                        <div class="input-file">
+                          <label class="f-medium" for="type-file-8">Выбрать файл</label>
+                          <input class="fast-file" id="type-file-8" type="file" name="file8" required="required">
+                        </div>
+                        <div class="state f-medium">файл не выбран</div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <ul class="personal-menu">
-                  <li><a href="/personal-datas.html">Личные данные</a></li>
-                  <li><a href="/income.html">Доходы и платежи</a></li>
-                  <li><a href="/addresses.html">Адреса</a></li>
-                  <li><a href="/cards.html">Карточки</a></li>
-                  <li><a href="/social.html">Я в социальных сетях</a></li>
-                  <li><a href="transaction-history.html">История транзакций</a></li>
-                </ul>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-9">
-                <div class="cards table-container">
-                  <table>
-                    <thead>
-                      <tr>
-                        <td>Номер карты</td>
-                        <td class="text-center">Статус</td>
-                        <td></td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <label class="control control--radio">
-                            <div class="card-icon"><i class="icon-fc-card" aria-hidden="true"></i></div>53 **** 6780
-                            <input type="radio" name="radio" checked="checked">
-                            <div class="control__indicator"></div>
-                          </label>
-                        </td>
-                        <td class="text-center">
-                          <div class="active">Активирована</div>
-                        </td>
-                        <td>
-                          <div class="remove-icon"><i class="icon-fc-trash" aria-hidden="true"></i></div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <label class="control control--radio">
-                            <div class="card-icon"><i class="icon-fc-card" aria-hidden="true"></i></div>53 **** 6780
-                            <input type="radio" name="radio">
-                            <div class="control__indicator"></div>
-                          </label>
-                        </td>
-                        <td class="text-center">
-                          <div class="active">Активирована</div>
-                        </td>
-                        <td>
-                          <div class="remove-icon"><i class="icon-fc-trash" aria-hidden="true"></i></div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <label class="control control--radio">
-                            <div class="card-icon"><i class="icon-fc-card" aria-hidden="true"></i></div>53 **** 6780
-                            <input type="radio" name="radio">
-                            <div class="control__indicator"></div>
-                          </label>
-                        </td>
-                        <td class="text-center">
-                          <div class="inactive">Неактивна</div>
-                        </td>
-                        <td>
-                          <div class="remove-icon"><i class="icon-fc-trash" aria-hidden="true"></i></div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="actions mt-4em flex flex-end">
-                  <button class="btn-main btn-blue btn-medium mr-1em" type="button"><i class="icon-fc-add-card" aria-hidden="true"></i>Добавить карту</button>
-                  <button class="btn-main btn-orange" type="button">Оплатить</button>
-                </div>
-              </div>
+              </section>
             </div>
           </div>
         </div>
@@ -387,5 +402,6 @@
     <script src="./static/js/libs/materialize/materialize.min.js"></script>
     <script src="./static/js/libs/rangeslider/rangeslider.min.js"></script>
     <script src="./static/js/libs/jquery.steps/jquery.steps.min.js"></script>
+    <script src="./static/js/libs/sweetalert/sweetalert2.min.js"></script>
   </body>
 </html>
