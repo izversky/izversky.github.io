@@ -66,7 +66,6 @@
                     <div class="flex-1em space-between">
                       <div class="col">
                         <div class="about-us-menu__contacts mb-1em">
-                          <div class="image mb-1em"><img src="./static/images/svg/logo.svg" alt=""></div>
                           <div class="item">
                             <div class="descr">связаться с нами</div>
                             <div class="info">
@@ -235,6 +234,7 @@
               <form action="/index.html">
                 <div class="credit-calculate">
                   <div class="credit-calculate__inner">
+                    <div class="credit-calculate__label">Заявка на кредит</div>
                     <div class="summ-slider">
                       <div class="value-block">Сумма кредита<span class="value">
                           <div class="input-buffer"></div>
@@ -257,13 +257,13 @@
                     </div>
                     <div class="calendar-container">
                       <div class="calendar-checked-date">
-                        <div class="d-i-block up semibold">Заплатить до</div><span></span>
+                        <div class="d-i-block">Заплатить до</div><span></span>
                       </div>
                       <div class="calendar-inner">
                         <div class="calendar" id="calendar"></div>
                         <div class="info-block">
                           <div class="info-block__summ">
-                            <h5 class="up semibold">Сумма</h5>
+                            <h5>Сумма</h5>
                             <div class="value"><span>5 000</span>грн</div>
                           </div>
                           <div class="info-block__commission">
@@ -272,7 +272,7 @@
                             <div class="descr">кредитная ставка 1%</div>
                           </div>
                           <div class="info-block__payment">
-                            <h5 class="up semibold">Всего к оплате</h5>
+                            <h5>Всего к оплате</h5>
                             <div class="value"><span>5 100</span>грн</div>
                           </div>
                           <button class="btn-main btn-orange btn-medium" type="submit"><span class="desktop">Подтвердить</span><span class="mobile">подать заявку</span></button>
@@ -593,10 +593,80 @@
             <div class="col">
               <div id="sw-error">Попап error</div>
             </div>
+            <div class="col">
+              <div id="sw-basket">Попап с корзиной</div>
+            </div>
+            <script>
+              document.getElementById('sw-basket').addEventListener('click', function() {
+              	var countDownDate = new Date('November 4, 2019 23:00:00').getTime(),
+              		distance = getTimerDistance(countDownDate),
+              		clockValue = getClockValues(distance);
+              
+              	Swal.fire({
+              		title: false,
+              		type: '',
+              		html: '<div class="status-popup">' +
+              			'<div class="icon">' +
+              			'<img src="./static/images/png/basket.png">' +
+              			'</div>' +
+              			'<h3>Поздравляем!</h3>' +
+              			'<p>Ваш кредит одобрен.</p>' +
+              			'<div class="popup-timer">' +
+              			'<div class="item hours"><span class="value">' + clockValue.hours + '</span></div><span>:</span>' +
+              			'<div class="item minutes"><span class="value">' + clockValue.minutes + '</span></div><span>:</span>' +
+              			'<div class="item seconds"><span class="value">' + clockValue.seconds + '</span></div>' +
+              			'</div>' +
+              			'</div>',
+              		showCloseButton: false,
+              		showCancelButton: false,
+              		focusConfirm: true,
+              		confirmButtonText: '<a class="btn-main btn-orange" href="/">Получить деньги</a>',
+              		onClose: function() {
+              			clearInterval(timerInterval);
+              		}
+              	});
+              	startTimer(document.querySelector('.popup-timer'), countDownDate);
+              });
+            </script>
+            <div class="col">
+              <div id="sw-minute">Попап минуты секунды</div>
+            </div>
+            <script>
+              document.getElementById('sw-minute').addEventListener('click', function() {
+              	var countDownDate = new Date('November 4, 2019 23:00:00').getTime(),
+              		distance = getTimerDistance(countDownDate),
+              		clockValue = getClockValues(distance);
+              
+              	Swal.fire({
+              		title: false,
+              		type: '',
+              		html: '<div class="status-popup">' +
+              			'<div class="icon">' +
+              			'<img src="./static/images/png/card-success.png">' +
+              			'</div>' +
+              			'<h3>Поздравляем!</h3>' +
+              			'<p>Ваш кредит одобрен.</p>' +
+              			'<div class="popup-timer">' +
+              			'<div class="item minutes"><span class="value">' + clockValue.minutes + '</span></div><span>:</span>' +
+              			'<div class="item seconds"><span class="value">' + clockValue.seconds + '</span></div>' +
+              			'</div>' +
+              			'</div>',
+              		showCloseButton: false,
+              		showCancelButton: false,
+              		focusConfirm: true,
+              		confirmButtonText: '<a class="btn-main btn-orange" href="/">Получить деньги</a>',
+              		onClose: function() {
+              			clearInterval(timerInterval);
+              		}
+              	});
+              	startTimer(document.querySelector('.popup-timer'), countDownDate);
+              });
+            </script>
             <div class="col"><a href="/select-card.html">Выбор карты</a></div>
             <div class="col"><a href="/payment-message.html">Сообщение после платежа</a></div>
             <div class="col"><a href="/repay.html">Погасить кредит</a></div>
             <div class="col"><a href="/index-product.html">Главная продукт</a></div>
+            <div class="col"><a href="/document.html">Документ pdf</a></div>
           </div>
         </div>
       </div>

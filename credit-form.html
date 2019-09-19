@@ -66,7 +66,6 @@
                     <div class="flex-1em space-between">
                       <div class="col">
                         <div class="about-us-menu__contacts mb-1em">
-                          <div class="image mb-1em"><img src="./static/images/svg/logo.svg" alt=""></div>
                           <div class="item">
                             <div class="descr">связаться с нами</div>
                             <div class="info">
@@ -215,15 +214,15 @@
                         <h2>Личные данные</h2>
                         <div class="form-group input-effect">
                           <input type="text" placeholder="">
-                          <label>Имя</label><span class="focus-border"></span>
+                          <label>Имя</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                         </div>
                         <div class="form-group input-effect">
                           <input type="text" placeholder="">
-                          <label>Фамилия</label><span class="focus-border"></span>
+                          <label>Фамилия</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                         </div>
                         <div class="form-group input-effect">
                           <input type="text" placeholder="">
-                          <label>Отчество</label><span class="focus-border"></span>
+                          <label>Отчество</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                         </div>
                         <div class="mb-10">День вашего рождения</div>
                         <div class="form-group">
@@ -250,7 +249,7 @@
                               <option>2</option>
                             </select>
                             <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                          </div>
+                          </div><span class="error-text">Заполните данные</span>
                         </div>
                         <div class="form-group"><span style="margin-right: 15px">Ваш пол:</span>
                           <label class="control control--radio">мужчина
@@ -260,22 +259,22 @@
                           <label class="control control--radio">женщина
                             <input type="radio" name="radio">
                             <div class="control__indicator"></div>
-                          </label>
+                          </label><span class="error-text">Выберите</span>
                         </div>
                         <div class="form-group input-effect">
                           <input type="text" placeholder="">
-                          <label>Телефон</label><span class="focus-border"></span>
+                          <label>Телефон</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                         </div>
                       </div>
                       <div class="column">
                         <h2>Паспортные данные</h2>
                         <div class="mb-2_3em pt-0_5em">
                           <label class="control control--radio">Паспорт
-                            <input type="radio" name="document-type" checked="checked" value="pas">
+                            <input type="radio" name="document_type" checked="checked" value="pas">
                             <div class="control__indicator"></div>
                           </label>
                           <label class="control control--radio">ID карта
-                            <input type="radio" name="document-type" value="id">
+                            <input type="radio" name="document_type" value="id">
                             <div class="control__indicator"></div>
                           </label>
                         </div>
@@ -283,20 +282,20 @@
                           <div class="passport-data mb-10"><span class="mr-10">Паспортные данные</span>
                             <div class="form-group inline-input input-effect mr-10">
                               <input type="text" placeholder="">
-                              <label>Серия</label><span class="focus-border"></span>
+                              <label>Серия</label><span class="focus-border"></span><span class="error-text">Заполните</span>
                             </div>
                             <div class="form-group inline-input input-effect">
                               <input type="text" placeholder="">
-                              <label>Номер</label><span class="focus-border"></span>
+                              <label>Номер</label><span class="focus-border"></span><span class="error-text">Заполните</span>
                             </div>
                           </div>
                           <div class="form-group input-effect">
                             <input type="text" placeholder="">
-                            <label>Кем выдан</label><span class="focus-border"></span>
+                            <label>Кем выдан</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                           </div>
                           <div class="form-group input-effect">
                             <input type="text" placeholder="">
-                            <label>ИНН</label><span class="focus-border"></span>
+                            <label>ИНН</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                           </div>
                           <div class="mb-10">Дата выдачи паспорта</div>
                           <div class="form-group">
@@ -323,21 +322,21 @@
                                 <option>2</option>
                               </select>
                               <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                            </div>
+                            </div><span class="error-text">Укажите данные</span>
                           </div>
                         </div>
                         <div class="id-container display-none" data-type="id">
                           <div class="form-group input-effect">
                             <input type="text" placeholder="">
-                            <label>Номер записи ID</label><span class="focus-border"></span>
+                            <label>Номер записи ID</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                           </div>
                           <div class="form-group input-effect">
                             <input type="text" placeholder="">
-                            <label>Номер ID</label><span class="focus-border"></span>
+                            <label>Номер ID</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                           </div>
                           <div class="form-group input-effect">
                             <input type="text" placeholder="">
-                            <label>Кем выдан ID</label><span class="focus-border"></span>
+                            <label>Кем выдан ID</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                           </div>
                           <div class="mb-10">ID действителен до</div>
                           <div class="form-group">
@@ -364,24 +363,30 @@
                                 <option>2</option>
                               </select>
                               <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                            </div>
+                            </div><span class="error-text">Укажите данные</span>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mb-0-imp">
                       <label class="control control--checkbox decoration-underline">Направляю сообщение Обществу о принятии условий договора на использование аналога собственноручной подписи
                         <input type="checkbox">
                         <div class="control__indicator"></div>
                       </label>
+                    </div>
+                    <div class="form-group mb-0-imp">
                       <label class="control control--checkbox decoration-underline">Предоставляю разрешение на проверку информации относительно Клиента в Бюро кредитных историй
                         <input type="checkbox">
                         <div class="control__indicator"></div>
                       </label>
+                    </div>
+                    <div class="form-group mb-0-imp">
                       <label class="control control--checkbox decoration-underline">Предоставляю разрешение на проверку, обработку и передачу персональных данных
                         <input type="checkbox">
                         <div class="control__indicator"></div>
                       </label>
+                    </div>
+                    <div class="form-group">
                       <label class="control control--checkbox decoration-underline">Акцептую Публичный договор-оферту по добровольному страхованию ответственности заемщика за непогашение кредита
                         <input type="checkbox">
                         <div class="control__indicator"></div>
@@ -402,7 +407,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -413,31 +418,31 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Количество детей</label><span class="focus-border"></span>
+                        <label>Количество детей</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                     </div>
                     <div class="column">
                       <h2>Данные другого контактного лица</h2>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Имя</label><span class="focus-border"></span>
+                        <label>Имя</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Фамилия</label><span class="focus-border"></span>
+                        <label>Фамилия</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Отчество</label><span class="focus-border"></span>
+                        <label>Отчество</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Телефон</label><span class="focus-border"></span>
+                        <label>Телефон</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group">
                         <div class="select full">
@@ -447,7 +452,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                     </div>
@@ -460,7 +465,7 @@
                     <div class="column">
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Страна</label><span class="focus-border"></span>
+                        <label>Страна</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group">
                         <div class="select full">
@@ -470,7 +475,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -481,7 +486,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -492,7 +497,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -503,30 +508,30 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Индекс</label><span class="focus-border"></span>
+                        <label>Индекс</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                     </div>
                     <div class="column">
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Улица</label><span class="focus-border"></span>
+                        <label>Улица</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Дом</label><span class="focus-border"></span>
+                        <label>Дом</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Корпус</label><span class="focus-border"></span>
+                        <label>Корпус</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Квартира</label><span class="focus-border"></span>
+                        <label>Квартира</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group">
                         <div class="select full">
@@ -536,12 +541,12 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Срок проживания</label><span class="focus-border"></span>
+                        <label>Срок проживания</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                     </div>
                   </div>
@@ -557,7 +562,7 @@
                       <div class="column">
                         <div class="form-group input-effect">
                           <input type="text" placeholder="">
-                          <label>Страна</label><span class="focus-border"></span>
+                          <label>Страна</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                         </div>
                         <div class="form-group">
                           <div class="select full">
@@ -567,7 +572,7 @@
                               <option>14</option>
                               <option>15</option>
                             </select>
-                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                           </div>
                         </div>
                         <div class="form-group">
@@ -578,7 +583,7 @@
                               <option>14</option>
                               <option>15</option>
                             </select>
-                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                           </div>
                         </div>
                         <div class="form-group">
@@ -589,7 +594,7 @@
                               <option>14</option>
                               <option>15</option>
                             </select>
-                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                           </div>
                         </div>
                         <div class="form-group">
@@ -600,26 +605,26 @@
                               <option>14</option>
                               <option>15</option>
                             </select>
-                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                           </div>
                         </div>
                         <div class="form-group input-effect">
                           <input type="text" placeholder="">
-                          <label>Индекс</label><span class="focus-border"></span>
+                          <label>Индекс</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                         </div>
                       </div>
                       <div class="column">
                         <div class="form-group input-effect">
                           <input type="text" placeholder="">
-                          <label>Улица</label><span class="focus-border"></span>
+                          <label>Улица</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                         </div>
                         <div class="form-group input-effect">
                           <input type="text" placeholder="">
-                          <label>Дом</label><span class="focus-border"></span>
+                          <label>Дом</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                         </div>
                         <div class="form-group input-effect">
                           <input type="text" placeholder="">
-                          <label>Корпус</label><span class="focus-border"></span>
+                          <label>Корпус</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                         </div>
                         <div class="form-group input-effect">
                           <input type="text" placeholder="">
@@ -633,12 +638,12 @@
                               <option>14</option>
                               <option>15</option>
                             </select>
-                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                            <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                           </div>
                         </div>
                         <div class="form-group input-effect">
                           <input type="text" placeholder="">
-                          <label>Срок проживания</label><span class="focus-border"></span>
+                          <label>Срок проживания</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                         </div>
                       </div>
                     </div>
@@ -651,7 +656,7 @@
                     <div class="column">
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Название предприятия</label><span class="focus-border"></span>
+                        <label>Название предприятия</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group">
                         <div class="select full">
@@ -661,7 +666,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -672,7 +677,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -683,12 +688,12 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Рабочий телефон</label><span class="focus-border"></span>
+                        <label>Рабочий телефон</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                     </div>
                     <div class="column">
@@ -700,7 +705,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -711,7 +716,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -722,7 +727,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -733,7 +738,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -744,7 +749,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                     </div>
@@ -760,7 +765,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -771,7 +776,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -782,7 +787,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group">
@@ -793,12 +798,12 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Индекс</label><span class="focus-border"></span>
+                        <label>Индекс</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                     </div>
                     <div class="column">
@@ -810,24 +815,24 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Улица</label><span class="focus-border"></span>
+                        <label>Улица</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Дом</label><span class="focus-border"></span>
+                        <label>Дом</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Корпус</label><span class="focus-border"></span>
+                        <label>Корпус</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Офис</label><span class="focus-border"></span>
+                        <label>Офис</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                     </div>
                   </div>
@@ -845,16 +850,16 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Ежемесячный платеж по поточным кредитам</label><span class="focus-border"></span>
+                        <label>Ежемесячный платеж по поточным кредитам</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="form-group input-effect">
                         <input type="text" placeholder="">
-                        <label>Сумма основного дохода</label><span class="focus-border"></span>
+                        <label>Сумма основного дохода</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                     </div>
                     <div class="column">
@@ -866,7 +871,7 @@
                             <option>14</option>
                             <option>15</option>
                           </select>
-                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
+                          <div class="select__arrow"><i class="icon-fc-angle-down"></i></div><span class="error-text">Выберите</span>
                         </div>
                       </div>
                       <div class="mb-10">Дата следующей выплаты дохода</div>
@@ -894,7 +899,7 @@
                             <option>2</option>
                           </select>
                           <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
-                        </div>
+                        </div><span class="error-text">Введите данные</span>
                       </div>
                     </div>
                   </div>
