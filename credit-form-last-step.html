@@ -198,86 +198,51 @@
               <section>
                 <h2>Документы</h2>
                 <div class="document-upload-step mb-2em">
+                  <div class="document-upload-step__item display-none">
+                    <div class="form-group input-effect">
+                      <input type="text" placeholder="" name="document-file-name[]">
+                      <label>Введите название</label><span class="focus-border"></span><span class="error-text">Укажите название</span>
+                    </div>
+                    <div class="input">
+                      <div class="input-file">
+                        <label class="f-medium" for="">Выбрать файл</label>
+                        <input class="fast-file" type="file" name="document-file[]" required="required">
+                      </div>
+                      <div class="state f-medium">файл не выбран</div>
+                    </div>
+                    <div class="remove-document"><i class="icon-fc-trash"></i></div>
+                  </div>
                   <form action="" id="document-upload">
                     <div class="document-upload-step__item">
-                      <div class="text f-medium">Фото клиента с паспортом в руке:</div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="" name="document-file-name[]">
+                        <label>Введите название</label><span class="focus-border"></span><span class="error-text">Укажите название</span>
+                      </div>
                       <div class="input">
                         <div class="input-file">
                           <label class="f-medium" for="type-file-1">Выбрать файл</label>
-                          <input class="fast-file" id="type-file-1" type="file" name="file1" required="required">
+                          <input class="fast-file" id="type-file-1" type="file" name="document-file[]" required="required">
                         </div>
                         <div class="state f-medium">файл не выбран</div>
                       </div>
+                      <div class="remove-document"><i class="icon-fc-trash"></i></div>
                     </div>
                     <div class="document-upload-step__item">
-                      <div class="text f-medium">Скан/фото ИНН:</div>
+                      <div class="form-group input-effect">
+                        <input type="text" placeholder="" name="document-file-name[]">
+                        <label>Введите название</label><span class="focus-border"></span><span class="error-text">Укажите название</span>
+                      </div>
                       <div class="input">
                         <div class="input-file">
                           <label class="f-medium" for="type-file-2">Выбрать файл</label>
-                          <input class="fast-file" id="type-file-2" type="file" name="file2" required="required">
+                          <input class="fast-file" id="type-file-2" type="file" name="document-file[]" required="required">
                         </div>
                         <div class="state f-medium">файл не выбран</div>
                       </div>
+                      <div class="remove-document"><i class="icon-fc-trash"></i></div>
                     </div>
-                    <div class="document-upload-step__item">
-                      <div class="text f-medium">Скан/фото первой страницы паспорта:</div>
-                      <div class="input">
-                        <div class="input-file">
-                          <label class="f-medium" for="type-file-3">Выбрать файл</label>
-                          <input class="fast-file" id="type-file-3" type="file" name="file3" required="required">
-                        </div>
-                        <div class="state f-medium">файл не выбран</div>
-                      </div>
-                    </div>
-                    <div class="document-upload-step__item">
-                      <div class="text f-medium">Скан/фото 2 и 3 страницы паспорта:</div>
-                      <div class="input">
-                        <div class="input-file">
-                          <label class="f-medium" for="type-file-4">Выбрать файл</label>
-                          <input class="fast-file" id="type-file-4" type="file" name="file4" required="required">
-                        </div>
-                        <div class="state f-medium">файл не выбран</div>
-                      </div>
-                    </div>
-                    <div class="document-upload-step__item">
-                      <div class="text f-medium">Скан/фото страницы паспорта с актуальным фото:</div>
-                      <div class="input">
-                        <div class="input-file">
-                          <label class="f-medium" for="type-file-5">Выбрать файл</label>
-                          <input class="fast-file" id="type-file-5" type="file" name="file5" required="required">
-                        </div>
-                        <div class="state f-medium">файл не выбран</div>
-                      </div>
-                    </div>
-                    <div class="document-upload-step__item">
-                      <div class="text f-medium">Скан/фото страницы с пропиской:</div>
-                      <div class="input">
-                        <div class="input-file">
-                          <label class="f-medium" for="type-file-6">Выбрать файл</label>
-                          <input class="fast-file" id="type-file-6" type="file" name="file6" required="required">
-                        </div>
-                        <div class="state f-medium">файл не выбран</div>
-                      </div>
-                    </div>
-                    <div class="document-upload-step__item">
-                      <div class="text f-medium">Скан/фото другого документа:</div>
-                      <div class="input">
-                        <div class="input-file">
-                          <label class="f-medium" for="type-file-7">Выбрать файл</label>
-                          <input class="fast-file" id="type-file-7" type="file" name="file7" required="required">
-                        </div>
-                        <div class="state f-medium">файл не выбран</div>
-                      </div>
-                    </div>
-                    <div class="document-upload-step__item">
-                      <div class="text f-medium">Скан/фото дополнительно:</div>
-                      <div class="input">
-                        <div class="input-file">
-                          <label class="f-medium" for="type-file-8">Выбрать файл</label>
-                          <input class="fast-file" id="type-file-8" type="file" name="file8" required="required">
-                        </div>
-                        <div class="state f-medium">файл не выбран</div>
-                      </div>
+                    <div class="text-right">
+                      <button class="btn-main btn-blue btn-small" id="add-document-upload-step__item" type="button"><i class="fas fa-plus-circle"></i>Добавить документ</button>
                     </div>
                   </form>
                 </div>
