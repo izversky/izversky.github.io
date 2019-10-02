@@ -24,7 +24,18 @@
                   <li><a href="#"><span class="icon"><i class="icon-fc-card" aria-hidden="true"></i></span><span class="text">Получить</span></a></li>
                   <li><a href="#"><span class="icon"><i class="icon-fc-purse" aria-hidden="true"></i></span><span class="text">Погасить</span></a></li>
                   <li><a href="#"><span class="icon"><i class="icon-fc-gift" aria-hidden="true"></i></span><span class="text">Акции</span></a></li>
-                  <li><a class="login-desktop" href="#"><span class="icon"><i class="icon-fc-mini-logo" aria-hidden="true"></i></span><span class="text">Мой<br>кабинет</span></a></li>
+                  <li>
+                    <div class="cabinet-container"><a class="cabinet" href="#"><span class="icon"><i class="icon-fc-user" aria-hidden="true"></i></span><span class="text"><span class="name">Иващена...</span><span class="id">ID 105498</span></span><i class="icon-fc-angle-down" aria-hidden="true"></i></a>
+                      <ul class="user-menu">
+                        <li><a href="/personal-datas.html">Профиль</a></li>
+                        <li><a href="/documents.html">Документы</a></li>
+                        <li><a href="/credits.html">Кредиты</a></li>
+                        <li><a href="/transaction-history.html">Транзакции</a></li>
+                        <li><a href="#">Смена пароля</a></li>
+                        <li><a href="#">Выход</a></li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -211,7 +222,7 @@
                   <div class="two-columns">
                     <div class="column">
                       <h2>Личные данные</h2>
-                      <div class="form-group input-effect">
+                      <div class="form-group input-effect error">
                         <input type="text" placeholder="">
                         <label>Имя</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
@@ -224,7 +235,7 @@
                         <label>Отчество</label><span class="focus-border"></span><span class="error-text">Заполните поле</span>
                       </div>
                       <div class="mb-10">День вашего рождения</div>
-                      <div class="form-group">
+                      <div class="form-group error">
                         <div class="select">
                           <select>
                             <option disabled selected value>Дата</option>
@@ -250,7 +261,7 @@
                           <div class="select__arrow"><i class="icon-fc-angle-down"></i></div>
                         </div><span class="error-text">Заполните данные</span>
                       </div>
-                      <div class="form-group"><span style="margin-right: 15px">Ваш пол:</span>
+                      <div class="form-group error"><span style="margin-right: 15px">Ваш пол:</span>
                         <label class="control control--radio">мужчина
                           <input type="radio" name="radio" checked="checked">
                           <div class="control__indicator"></div>
@@ -367,7 +378,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group mb-0-imp">
+                  <div class="form-group mb-0-imp error">
                     <label class="control control--checkbox decoration-underline">Направляю сообщение Обществу о принятии условий договора на использование аналога собственноручной подписи
                       <input type="checkbox">
                       <div class="control__indicator"></div>

@@ -24,7 +24,18 @@
                   <li><a href="#"><span class="icon"><i class="icon-fc-card" aria-hidden="true"></i></span><span class="text">Получить</span></a></li>
                   <li><a href="#"><span class="icon"><i class="icon-fc-purse" aria-hidden="true"></i></span><span class="text">Погасить</span></a></li>
                   <li><a href="#"><span class="icon"><i class="icon-fc-gift" aria-hidden="true"></i></span><span class="text">Акции</span></a></li>
-                  <li><a class="login-desktop" href="#"><span class="icon"><i class="icon-fc-mini-logo" aria-hidden="true"></i></span><span class="text">Мой<br>кабинет</span></a></li>
+                  <li>
+                    <div class="cabinet-container"><a class="cabinet" href="#"><span class="icon"><i class="icon-fc-user" aria-hidden="true"></i></span><span class="text"><span class="name">Иващена...</span><span class="id">ID 105498</span></span><i class="icon-fc-angle-down" aria-hidden="true"></i></a>
+                      <ul class="user-menu">
+                        <li><a href="/personal-datas.html">Профиль</a></li>
+                        <li><a href="/documents.html">Документы</a></li>
+                        <li><a href="/credits.html">Кредиты</a></li>
+                        <li><a href="/transaction-history.html">Транзакции</a></li>
+                        <li><a href="#">Смена пароля</a></li>
+                        <li><a href="#">Выход</a></li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -238,11 +249,18 @@
                     <div class="summ-slider">
                       <div class="value-block">Сумма кредита<span class="value">
                           <div class="input-buffer"></div>
-                          <input type="text" value="5 000">грн</span></div>
-                      <input id="range-credit-summ" type="range" min="1000" max="10000" step="1000" value="5000">
+                          <input type="text" value="2 000">грн</span></div>
+                      <div class="slider-max-disabled">
+                        <div class="true-slider" style="-webkit-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%;">
+                          <input id="range-credit-summ" type="range" min="1000" max="3000" step="1000" value="2000">
+                        </div>
+                        <div class="fake-slider" style="-webkit-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%;"></div>
+                      </div>
                       <div class="range-info">
                         <div class="from"><span>1 000</span>грн</div>
-                        <div class="to"><span>10 000</span>грн</div>
+                        <div class="to range-info__with-popup"><span>3 000</span>грн
+                          <div class="range-info__popup">Доступная сумма растет с каждым кредитом</div>
+                        </div>
                       </div>
                     </div>
                     <div class="summ-slider day-slider">
@@ -269,7 +287,10 @@
                           <div class="info-block__commission">
                             <h5>Комиссия</h5>
                             <div class="value"><span>100</span>грн</div>
-                            <div class="descr">кредитная ставка 1%</div>
+                          </div>
+                          <div class="info-block__commission">
+                            <h5>Ставка</h5>
+                            <div class="value"><span>1</span>% в день</div>
                           </div>
                           <div class="info-block__payment">
                             <h5>Всего к оплате</h5>
@@ -662,6 +683,12 @@
               	startTimer(document.querySelector('.popup-timer'), countDownDate);
               });
             </script>
+            <div class="col">
+              <div id="sw-news">Попап подписаны на новости</div>
+            </div>
+            <div class="col">
+              <div id="sw-documents">Попап подписанные документы</div>
+            </div>
             <div class="col"><a href="/select-card.html">Выбор карты</a></div>
             <div class="col"><a href="/payment-message.html">Сообщение после платежа</a></div>
             <div class="col"><a href="/repay.html">Погасить кредит</a></div>
