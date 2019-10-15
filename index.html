@@ -213,7 +213,8 @@
                 </div>
               </div>
             </div>
-            <div class="item" style="background-image: url('./static/images/png/action.png')">
+            <div class="item" style="background-image: url('./static/images/png/layer-back.png')">
+              <div class="front-image"><img src="./static/images/png/layer-front.png" alt="Front"></div>
               <div class="description">
                 <div class="container">
                   <div class="flex-2em">
@@ -256,6 +257,12 @@
             <div class="container flex flex-end items-center">
               <form action="/index.html">
                 <div class="credit-calculate">
+                  <script>
+                    var creditDatas = {
+                    	dailyRate: 1 / 100,
+                    	commission: 25 / 100
+                    }
+                  </script>
                   <div class="credit-calculate__inner">
                     <div class="credit-calculate__label">Заявка на кредит</div>
                     <div class="summ-slider">
@@ -292,19 +299,19 @@
                         <div class="info-block">
                           <div class="info-block__summ">
                             <h5>Сумма</h5>
-                            <div class="value"><span>5 000</span>грн</div>
+                            <div class="value"><span>2 000</span>грн</div>
                           </div>
                           <div class="info-block__commission">
                             <h5>Комиссия</h5>
-                            <div class="value"><span>100</span>грн</div>
+                            <div class="value"><span></span>грн</div>
                           </div>
-                          <div class="info-block__commission">
+                          <div class="info-block__rate">
                             <h5>Ставка</h5>
                             <div class="value"><span>1</span>% в день</div>
                           </div>
                           <div class="info-block__payment">
                             <h5>Всего к оплате</h5>
-                            <div class="value"><span>5 100</span>грн</div>
+                            <div class="value"><span></span>грн</div>
                           </div>
                           <button class="btn-main btn-orange btn-medium" type="submit"><span class="desktop">Подтвердить</span><span class="mobile">подать заявку</span></button>
                         </div>
