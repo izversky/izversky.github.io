@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
-  <body class="index-page">
+  <body>
     <div class="wrapper">
       <header class="header">
         <div class="container">
@@ -625,96 +625,13 @@
             <div class="col"><a href="/registration-login.html">Регистрация и логин</a></div>
             <div class="col"><a href="/credit-form.html">Регистрационная форма</a></div>
             <div class="col"><a href="/change-password.html">Смена пароля</a></div>
-            <div class="col"><a href="/credit-form-one-step.html">Кредитная форма в один шаг</a></div>
-            <div class="col"><a href="/credit-form-last-step.html">Кредитная форма документы</a></div>
             <div class="col"><a href="/404.html">404</a></div>
-            <div class="col"><a href="/index-with-sliders.html">Главная страница без календаря</a></div>
             <div class="col">
               <div id="sw-success">Попап success</div>
             </div>
             <div class="col">
               <div id="sw-error">Попап error</div>
             </div>
-            <div class="col">
-              <div id="sw-basket">Попап с корзиной</div>
-            </div>
-            <script>
-              document.getElementById('sw-basket').addEventListener('click', function() {
-              	var countDownDate = new Date('November 4, 2019 23:00:00').getTime(),
-              		distance = getTimerDistance(countDownDate),
-              		clockValue = getClockValues(distance);
-              
-              	Swal.fire({
-              		title: false,
-              		type: '',
-              		html: '<div class="status-popup">' +
-              			'<div class="icon">' +
-              			'<img src="./static/images/png/basket.png">' +
-              			'</div>' +
-              			'<h3>Поздравляем!</h3>' +
-              			'<p>Ваш кредит одобрен.</p>' +
-              			'<div class="popup-timer">' +
-              			'<div class="item hours"><span class="value">' + clockValue.hours + '</span></div><span>:</span>' +
-              			'<div class="item minutes"><span class="value">' + clockValue.minutes + '</span></div><span>:</span>' +
-              			'<div class="item seconds"><span class="value">' + clockValue.seconds + '</span></div>' +
-              			'</div>' +
-              			'</div>',
-              		showCloseButton: false,
-              		showCancelButton: false,
-              		focusConfirm: true,
-              		confirmButtonText: '<a class="btn-main btn-orange" href="/">Получить деньги</a>',
-              		onClose: function() {
-              			clearInterval(timerInterval);
-              		}
-              	});
-              	startTimer(document.querySelector('.popup-timer'), countDownDate);
-              });
-            </script>
-            <div class="col">
-              <div id="sw-minute">Попап минуты секунды</div>
-            </div>
-            <script>
-              document.getElementById('sw-minute').addEventListener('click', function() {
-              	var countDownDate = new Date('November 4, 2019 23:00:00').getTime(),
-              		distance = getTimerDistance(countDownDate),
-              		clockValue = getClockValues(distance);
-              
-              	Swal.fire({
-              		title: false,
-              		type: '',
-              		html: '<div class="status-popup">' +
-              			'<div class="icon">' +
-              			'<img src="./static/images/png/card-success.png">' +
-              			'</div>' +
-              			'<h3>Поздравляем!</h3>' +
-              			'<p>Ваш кредит одобрен.</p>' +
-              			'<div class="popup-timer">' +
-              			'<div class="item minutes"><span class="value">' + clockValue.minutes + '</span></div><span>:</span>' +
-              			'<div class="item seconds"><span class="value">' + clockValue.seconds + '</span></div>' +
-              			'</div>' +
-              			'</div>',
-              		showCloseButton: false,
-              		showCancelButton: false,
-              		focusConfirm: true,
-              		confirmButtonText: '<a class="btn-main btn-orange" href="/">Получить деньги</a>',
-              		onClose: function() {
-              			clearInterval(timerInterval);
-              		}
-              	});
-              	startTimer(document.querySelector('.popup-timer'), countDownDate);
-              });
-            </script>
-            <div class="col">
-              <div id="sw-news">Попап подписаны на новости</div>
-            </div>
-            <div class="col">
-              <div id="sw-documents">Попап подписанные документы</div>
-            </div>
-            <div class="col"><a href="/select-card.html">Выбор карты</a></div>
-            <div class="col"><a href="/payment-message.html">Сообщение после платежа</a></div>
-            <div class="col"><a href="/repay.html">Погасить кредит</a></div>
-            <div class="col"><a href="/index-product.html">Главная продукт</a></div>
-            <div class="col"><a href="/document.html">Документ pdf</a></div>
           </div>
         </div>
       </div>
